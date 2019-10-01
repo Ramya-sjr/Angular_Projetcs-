@@ -1,0 +1,23 @@
+<div class="d-flex flex-column justify-content-center align-items-center">
+    
+  <div class="container">
+    <table class="table table-striped mt-5">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Student Id</th>
+                <th scope="col">Student Name</th>
+                <th scope="col">Student Department</th>
+                <th scope="col">Student Email</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr *ngFor="let student of students">
+                        <td>{{student.studentId}}</td>
+                        <td>{{student.studentName}}</td>
+                        <td>{{student.studentDept}}</td>
+                        <td>{{student.studentEmail}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>

@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-center align-items-center">
+<form>
+    <div class="form-group">
+        <label for="studentid">Student Id</label>
+        <input [(ngModel)]="id" type="text" name="sid" class="form-control" id="studentid" placeholder="Enter Id">
+    </div>
+    <button (click)="deleteStudent()" type="submit" class="btn btn-dark">Delete</button>
+</form>
+</div>

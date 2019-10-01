@@ -1,0 +1,23 @@
+.warning{
+
+    color: red;
+    font-size: 15px;
+
+
+}
+
+.warning-input{
+    border-color:red; 
+}
+
+.display-student{
+    background-color: rgb(230, 230, 230);
+    padding: 1.5rem;
+    padding-right: 3rem;
+    margin: 2rem;
+    /* border: 1px solid black; */
+}
+
+.display-student ul{
+    list-style-type: none;
+}

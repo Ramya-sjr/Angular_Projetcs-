@@ -1,0 +1,48 @@
+<div class="d-flex flex-column justify-content-center align-items-center">
+
+        <form autocomplete="off">
+            <div class="form-group">
+                <label for="studentid">Student Id</label>
+                <input [(ngModel)]="studentInfo" type="text" name="sid" class="form-control" id="studentid" placeholder="Enter Id">
+            </div>
+            <div *ngIf="novalue" class="warning">
+                <p>Invalid Id</p>
+              </div>
+            <button (click)="searchStudent()" type="submit" class="btn btn-dark">Search</button>
+        </form>
+
+
+        <div class="container mt-5">
+            
+            <div *ngIf="containsdata">
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Department</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let s of student">
+                       
+                        <td>{{s.studentId}}</td>
+                        <td>{{s.studentName}}</td>
+                        <td>{{s.studentDept}}</td>
+                        <td>{{s.studentEmail}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+            
+
+        </div>
+
+        </div>
+
+
+
+
+
+
